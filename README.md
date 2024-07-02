@@ -62,10 +62,10 @@ load_data <- function(file_path) {
 }
 
 # Load the universal model trained with gnomAD v2.1.1 dataset
-load("/storage/zhenghoufengLab/chenxiang/random_forest_model.RData")
+load("/path/to/file/random_forest_model.RData")
 
 # Load test data, also see test dataset "test.dataset"
-test_data <- load_data("/storage/zhenghoufengLab/chenxiang/test.data")
+test_data <- load_data("/path/to/file/test.data")
 
 # Columns V4 - V22 are "AF" features; Columns V23 - V41 are "DC" features
 selected_features <- c("V13","V32","V35","V29","V26","V33","V38","V31","V30","V23","V34","V41","V36","V27","V28","V37","V39","V40","V24","V25","V12","V14","V15","V9","V18","V21","V10","V20","V8","V7","V19","V5","V4","V11","V6","V17","V22","V16")
@@ -92,7 +92,7 @@ save_predictions_and_comparisons <- function(test_data, predictions, predicted_p
         write.csv(comparison, file=output_file, row.names=FALSE)
 }
 
-save_predictions_and_comparisons(test_data, predictions, predicted_prob, "test.data.predicted_results")
+save_predictions_and_comparisons(test_data, predictions, predicted_prob, "/path/to/file/test.data.predicted_results")
 ```
 
     [1] "Test Accuracy: 95.9183673469388 %"
