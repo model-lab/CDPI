@@ -100,5 +100,6 @@ save_predictions_and_comparisons(test_data, predictions, predicted_prob, "/path/
 
 
 ```R
-
+# Cite
+Chen X, Yu X. Toward a universal approach for predicting variant pathogenicity in diverse disease landscapes. J Genet Genomics. 2024 Jul 22:S1673-8527(24)00193-0. doi: 10.1016/j.jgg.2024.07.015
 ```
